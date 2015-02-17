@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<h1>Squad Info</h1>
+<h3>Squad Name: <%=@squad["name"] %></h3>
+<h3>Mascot: <%=@squad["mascot"] %></h3>
+  <p>
+  <a href="/squads/<%=@squad["id"] %>/students">Students in this Squad</a>
+  <!-- '/squads/:2/students' -->
+    </p>
+
+</body>
+</html>

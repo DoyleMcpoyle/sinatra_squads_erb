@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ruby Doc</title>
+</head>
+<body>
+<h1>Here are our squads,</h1>
+<% @squads.each do |squad| %>
+<h2><%= squad["name"]%></h2>
+<p>
+<a href="/squads/<%= squad["id"] %>">Show more info.</a>
+</p>
+<a href="/squads/<%= squad["id"]%>/edit">Edit</a> <!-- /edit -->
+<p>
+<a href="/squads/<%= squad["id"] %>">Delete</a>
+</p>
+<% end %>
+<p>
+<a href="/squads/new">ADD A NEW SQUAD</a>
+  </p>
+</body>
+</html>
